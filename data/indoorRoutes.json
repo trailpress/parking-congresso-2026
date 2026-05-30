@@ -1,10 +1,50 @@
 [
   {
-    "id": "route-mock-1",
-    "from": "ingresso-mock",
-    "to": "foyer-mock",
-    "nodeIds": ["ingresso-mock", "foyer-mock"],
+    "id": "route-fastest-public-to-parterre",
+    "from": "ingresso-pubblico",
+    "to": "parterre",
+    "nodeIds": ["ingresso-pubblico", "foyer-filadelfia", "corridoio-anello-0", "parterre"],
     "mode": "fastest",
+    "estimatedMinutes": 3
+  },
+  {
+    "id": "route-accessible-public-to-gallerie",
+    "from": "ingresso-pubblico",
+    "to": "gallerie",
+    "nodeIds": ["ingresso-pubblico", "foyer-filadelfia", "corridoio-anello-0", "ascensori-sebastopoli", "gallerie"],
+    "mode": "accessible",
+    "estimatedMinutes": 7
+  },
+  {
+    "id": "route-avoid-stairs-public-to-balconata-sebastopoli",
+    "from": "ingresso-pubblico",
+    "to": "balconata-sebastopoli",
+    "nodeIds": ["ingresso-pubblico", "foyer-filadelfia", "corridoio-anello-0", "ascensori-sebastopoli", "balconata-sebastopoli"],
+    "mode": "avoid-stairs",
+    "estimatedMinutes": 8
+  },
+  {
+    "id": "route-staff-entry-to-desk",
+    "from": "ingresso-staff",
+    "to": "desk-da-definire",
+    "nodeIds": ["ingresso-staff", "foyer-sebastopoli", "desk-da-definire"],
+    "mode": "staff",
     "estimatedMinutes": 2
+  },
+  {
+    "id": "route-public-entry-to-foyer-sebastopoli",
+    "from": "ingresso-pubblico",
+    "to": "foyer-sebastopoli",
+    "nodeIds": ["ingresso-pubblico", "foyer-filadelfia", "corridoio-anello-0", "foyer-sebastopoli"],
+    "mode": "public",
+    "estimatedMinutes": 5
+  },
+  {
+    "id": "route-fastest-staff-to-platea",
+    "from": "ingresso-staff",
+    "to": "platea",
+    "nodeIds": ["ingresso-staff", "foyer-sebastopoli", "corridoio-anello-0", "platea"],
+    "mode": "fastest",
+    "estimatedMinutes": 4
   }
 ]

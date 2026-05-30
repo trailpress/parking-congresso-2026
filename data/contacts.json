@@ -1,16 +1,42 @@
 [
   {
     "id": "emergency-primary",
-    "name": "da definire",
-    "role": "Referente emergenza",
-    "phone": "da definire",
-    "publishStatus": "da confermare"
+    "name": "Referente emergenza da definire",
+    "role": "Referente emergenza sanitaria",
+    "phone": "contatto emergenza da configurare",
+    "publishStatus": "da confermare",
+    "instructionId": "emergenza-sanitaria"
   },
   {
     "id": "emergency-secondary",
-    "name": "da definire",
+    "name": "Referente emergenza alternativo da definire",
     "role": "Referente emergenza alternativo",
-    "phone": "da definire",
-    "publishStatus": "da confermare"
+    "phone": "contatto emergenza da configurare",
+    "publishStatus": "da confermare",
+    "instructionId": "emergenza-sanitaria"
+  },
+  {
+    "id": "captain-zone",
+    "name": "Capitano da definire",
+    "role": "Capitano reparto parcheggio",
+    "phone": "numero da definire",
+    "publishStatus": "da confermare",
+    "instructionId": "ruolo-capitano"
+  },
+  {
+    "id": "key-man-zone",
+    "name": "Uomo Chiave da definire",
+    "role": "Uomo Chiave di zona",
+    "phone": "numero da definire",
+    "publishStatus": "da confermare",
+    "instructionId": "ruolo-uomo-chiave"
+  },
+  {
+    "id": "desk-info",
+    "name": "Desk da definire",
+    "role": "Desk operativo interno",
+    "phone": "numero da definire",
+    "publishStatus": "da confermare",
+    "instructionId": "diorama-verticali-desk"
   }
 ]

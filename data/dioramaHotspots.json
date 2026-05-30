@@ -1,11 +1,110 @@
 [
   {
-    "id": "diorama-arena",
-    "label": "Inalpi Arena mock",
-    "targetInstructionId": "workspace-status",
-    "type": "diorama",
-    "level": "mock",
+    "id": "diorama-ingresso-pubblico",
+    "label": "Ingresso pubblico",
+    "targetInstructionId": "diorama-ingressi",
+    "type": "entrance",
+    "level": "0",
+    "x": 18,
+    "y": 82
+  },
+  {
+    "id": "diorama-ingresso-staff",
+    "label": "Ingresso staff",
+    "targetInstructionId": "diorama-ingressi",
+    "type": "entrance",
+    "level": "0",
+    "x": 78,
+    "y": 82
+  },
+  {
+    "id": "diorama-foyer-filadelfia",
+    "label": "Foyer Filadelfia",
+    "targetInstructionId": "diorama-foyer",
+    "type": "level",
+    "level": "0",
+    "x": 28,
+    "y": 58
+  },
+  {
+    "id": "diorama-foyer-sebastopoli",
+    "label": "Foyer Sebastopoli",
+    "targetInstructionId": "diorama-foyer",
+    "type": "level",
+    "level": "0",
+    "x": 70,
+    "y": 58
+  },
+  {
+    "id": "diorama-parterre",
+    "label": "Parterre",
+    "targetInstructionId": "diorama-settori",
+    "type": "sector",
+    "level": "0",
     "x": 50,
-    "y": 50
+    "y": 42
+  },
+  {
+    "id": "diorama-platea",
+    "label": "Platea",
+    "targetInstructionId": "diorama-settori",
+    "type": "sector",
+    "level": "0",
+    "x": 50,
+    "y": 30
+  },
+  {
+    "id": "diorama-gallerie",
+    "label": "Gallerie",
+    "targetInstructionId": "diorama-settori",
+    "type": "sector",
+    "level": "+6",
+    "x": 50,
+    "y": 18
+  },
+  {
+    "id": "diorama-balconata-filadelfia",
+    "label": "Balconata Filadelfia",
+    "targetInstructionId": "diorama-settori",
+    "type": "sector",
+    "level": "+6",
+    "x": 24,
+    "y": 22
+  },
+  {
+    "id": "diorama-balconata-sebastopoli",
+    "label": "Balconata Sebastopoli",
+    "targetInstructionId": "diorama-settori",
+    "type": "sector",
+    "level": "+6",
+    "x": 76,
+    "y": 22
+  },
+  {
+    "id": "diorama-scale",
+    "label": "Scale",
+    "targetInstructionId": "diorama-verticali-desk",
+    "type": "service",
+    "level": "0/+6",
+    "x": 36,
+    "y": 48
+  },
+  {
+    "id": "diorama-ascensori",
+    "label": "Ascensori",
+    "targetInstructionId": "diorama-verticali-desk",
+    "type": "service",
+    "level": "0/+6",
+    "x": 64,
+    "y": 48
+  },
+  {
+    "id": "diorama-desk",
+    "label": "Desk da definire",
+    "targetInstructionId": "diorama-verticali-desk",
+    "type": "service",
+    "level": "0",
+    "x": 50,
+    "y": 66
   }
 ]

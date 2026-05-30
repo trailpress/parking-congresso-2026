@@ -3,28 +3,35 @@
     "id": "p1-rosso",
     "label": "P1 Rosso",
     "color": "red",
-    "destination": "da definire",
-    "instructionId": "workspace-status"
+    "destination": "via Filadelfia 82C - area P1 per conducenti disabili",
+    "instructionId": "p1-rosso"
   },
   {
     "id": "p1-viola",
     "label": "P1 Viola",
     "color": "purple",
-    "destination": "da definire",
-    "instructionId": "workspace-status"
+    "destination": "via Filadelfia 82C - area P1 staff congresso",
+    "instructionId": "p1-viola"
   },
   {
     "id": "p2-combi",
     "label": "P2 Combi",
     "color": "orange",
-    "destination": "da definire",
-    "instructionId": "workspace-status"
+    "destination": "via Filadelfia 89 - area Combi per particolari necessita' e disabili",
+    "instructionId": "p2-combi"
   },
   {
     "id": "p3-sosta-breve",
     "label": "P3 Sosta breve",
     "color": "yellow",
-    "destination": "da definire",
-    "instructionId": "workspace-status"
+    "destination": "controviale Est di Corso Galileo Ferraris - scarico/carico veloce",
+    "instructionId": "p3-sosta-breve"
+  },
+  {
+    "id": "bus",
+    "label": "Bus",
+    "color": "blue",
+    "destination": "percorso pedonale blu obbligatorio su Corso Galileo Ferraris",
+    "instructionId": "bus-percorso"
   }
 ]

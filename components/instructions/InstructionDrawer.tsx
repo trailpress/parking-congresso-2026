@@ -1,7 +1,9 @@
 'use client';
 
 import { Badge } from '@/components/ui/Badge';
+import { Button } from '@/components/ui/Button';
 import { Drawer } from '@/components/ui/Drawer';
+import { Icon } from '@/components/ui/Icon';
 import { InstructionSection } from '@/components/instructions/InstructionSection';
 import { SourceBadge } from '@/components/instructions/SourceBadge';
 import type { Instruction, OperationalColor } from '@/lib/types';
@@ -47,6 +49,14 @@ export function InstructionDrawer({ instruction, onClose, open = false }: Instru
         <InstructionSection title="Istruzione completa">
           <p>{instruction.fullInstruction ?? 'da definire'}</p>
         </InstructionSection>
+        {instruction.actions?.includes('openDiorama') ? (
+          <InstructionSection title="Azione rapida">
+            <Button className="w-full" href="/routes/diorama" variant="primary">
+              <Icon className="h-4 w-4" name="layers" />
+              Apri Diorama
+            </Button>
+          </InstructionSection>
+        ) : null}
         <InstructionSection title="Fonte">
           <div className="flex flex-wrap gap-2">
             {instruction.source?.map((source) => (

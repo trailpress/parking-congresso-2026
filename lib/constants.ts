@@ -36,7 +36,8 @@ export const operationalColorClasses = {
 } as const;
 
 export const appMeta = {
-  title: 'Parking Congresso 2026',
-  subtitle: 'Reparto Parcheggio - Inalpi Arena Torino',
+  title: 'Felici per sempre 2026',
+  subtitle: 'Reparto Parcheggio',
+  location: 'Inalpi Arena, Torino',
   placeholder: 'da definire'
 } as const;

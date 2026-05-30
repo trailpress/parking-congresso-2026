@@ -1,22 +1,131 @@
 [
   {
-    "id": "ingresso-mock",
-    "label": "Ingresso mock",
+    "id": "ingresso-pubblico",
+    "label": "Ingresso pubblico",
     "level": "0",
-    "x": 20,
-    "y": 70,
+    "x": 18,
+    "y": 82,
     "type": "entrance",
     "accessible": true,
-    "instructionId": "workspace-status"
+    "instructionId": "diorama-ingressi"
   },
   {
-    "id": "foyer-mock",
-    "label": "Foyer mock",
+    "id": "ingresso-staff",
+    "label": "Ingresso staff",
     "level": "0",
-    "x": 50,
-    "y": 50,
+    "x": 78,
+    "y": 82,
+    "type": "entrance",
+    "accessible": true,
+    "instructionId": "diorama-ingressi"
+  },
+  {
+    "id": "foyer-filadelfia",
+    "label": "Foyer Filadelfia",
+    "level": "0",
+    "x": 28,
+    "y": 58,
     "type": "foyer",
     "accessible": true,
-    "instructionId": "workspace-status"
+    "instructionId": "diorama-foyer"
+  },
+  {
+    "id": "foyer-sebastopoli",
+    "label": "Foyer Sebastopoli",
+    "level": "0",
+    "x": 70,
+    "y": 58,
+    "type": "foyer",
+    "accessible": true,
+    "instructionId": "diorama-foyer"
+  },
+  {
+    "id": "corridoio-anello-0",
+    "label": "Corridoio anello livello 0",
+    "level": "0",
+    "x": 50,
+    "y": 56,
+    "type": "corridor",
+    "accessible": true
+  },
+  {
+    "id": "parterre",
+    "label": "Parterre",
+    "level": "0",
+    "x": 50,
+    "y": 42,
+    "type": "sector",
+    "accessible": true,
+    "instructionId": "diorama-settori"
+  },
+  {
+    "id": "platea",
+    "label": "Platea",
+    "level": "0",
+    "x": 50,
+    "y": 30,
+    "type": "sector",
+    "accessible": true,
+    "instructionId": "diorama-settori"
+  },
+  {
+    "id": "scale-filadelfia",
+    "label": "Scale Filadelfia",
+    "level": "0/+6",
+    "x": 36,
+    "y": 48,
+    "type": "stairs",
+    "accessible": false,
+    "instructionId": "diorama-verticali-desk"
+  },
+  {
+    "id": "ascensori-sebastopoli",
+    "label": "Ascensori Sebastopoli",
+    "level": "0/+6",
+    "x": 64,
+    "y": 48,
+    "type": "elevator",
+    "accessible": true,
+    "instructionId": "diorama-verticali-desk"
+  },
+  {
+    "id": "gallerie",
+    "label": "Gallerie",
+    "level": "+6",
+    "x": 50,
+    "y": 18,
+    "type": "sector",
+    "accessible": true,
+    "instructionId": "diorama-settori"
+  },
+  {
+    "id": "balconata-filadelfia",
+    "label": "Balconata Filadelfia",
+    "level": "+6",
+    "x": 24,
+    "y": 22,
+    "type": "sector",
+    "accessible": false,
+    "instructionId": "diorama-settori"
+  },
+  {
+    "id": "balconata-sebastopoli",
+    "label": "Balconata Sebastopoli",
+    "level": "+6",
+    "x": 76,
+    "y": 22,
+    "type": "sector",
+    "accessible": true,
+    "instructionId": "diorama-settori"
+  },
+  {
+    "id": "desk-da-definire",
+    "label": "Desk da definire",
+    "level": "0",
+    "x": 50,
+    "y": 66,
+    "type": "desk",
+    "accessible": true,
+    "instructionId": "diorama-verticali-desk"
   }
 ]

@@ -1,18 +1,82 @@
 [
   {
     "id": "p1-area",
-    "label": "P1",
+    "label": "P1 - via Filadelfia 82C",
     "type": "parking",
     "color": "red",
-    "instructionId": "workspace-status",
-    "status": "da definire"
+    "instructionId": "p1-rosso",
+    "status": "mock V1 - accesso P1 Rosso e P1 Viola"
+  },
+  {
+    "id": "p1-staff-area",
+    "label": "P1 Staff - via Filadelfia 82C",
+    "type": "parking",
+    "color": "purple",
+    "instructionId": "p1-viola",
+    "status": "mock V1 - area staff da confermare"
+  },
+  {
+    "id": "p2-combi-area",
+    "label": "P2 Combi - via Filadelfia 89",
+    "type": "parking",
+    "color": "orange",
+    "instructionId": "p2-combi",
+    "status": "mock V1 - circa 800 m dall'arena con tratto verde"
+  },
+  {
+    "id": "p3-sosta-breve-area",
+    "label": "P3 Sosta breve - controviale Est Corso Galileo Ferraris",
+    "type": "parking",
+    "color": "yellow",
+    "instructionId": "p3-sosta-breve",
+    "status": "mock V1 - solo scarico/carico veloce"
   },
   {
     "id": "bus-area",
-    "label": "Bus",
+    "label": "Area Bus",
     "type": "bus",
     "color": "blue",
-    "instructionId": "workspace-status",
-    "status": "da definire"
+    "instructionId": "bus-percorso",
+    "status": "mock V1 - percorso pedonale blu obbligatorio"
+  },
+  {
+    "id": "accesso-filadelfia-82c",
+    "label": "Accesso via Filadelfia 82C",
+    "type": "access",
+    "color": "green",
+    "instructionId": "accesso-auto-con-pass",
+    "status": "mock V1 - accesso principale P1"
+  },
+  {
+    "id": "accesso-filadelfia-89",
+    "label": "Accesso via Filadelfia 89",
+    "type": "access",
+    "color": "orange",
+    "instructionId": "p2-combi",
+    "status": "mock V1 - accesso P2 Combi"
+  },
+  {
+    "id": "percorso-blu-bus",
+    "label": "Percorso pedonale blu Bus",
+    "type": "pedestrian",
+    "color": "blue",
+    "instructionId": "bus-percorso",
+    "status": "mock V1 - Corso Galileo Ferraris"
+  },
+  {
+    "id": "percorso-verde-combi",
+    "label": "Tratto verde P2 Combi",
+    "type": "pedestrian",
+    "color": "green",
+    "instructionId": "p2-combi",
+    "status": "mock V1 - tracciato semplificato"
+  },
+  {
+    "id": "checkpoint-accessi",
+    "label": "Checkpoint accessi",
+    "type": "checkpoint",
+    "color": "sage",
+    "instructionId": "accesso-auto-con-pass",
+    "status": "mock V1 - verifica pass e necessita'"
   }
 ]

@@ -11,7 +11,8 @@ export function EmergencyBar() {
         <div className="min-w-0 flex-1">
           <h2 className="text-base font-semibold text-greenDeep">Emergenza</h2>
           <p className="mt-1 text-sm leading-5 text-muted">
-            Procedura e contatti da definire. Non inserire numeri finche&apos; non confermati.
+            Fermati, avvisa un referente confermato e comunica posizione e necessita&apos;. Numeri
+            non pubblicati finche&apos; non approvati.
           </p>
         </div>
       </div>

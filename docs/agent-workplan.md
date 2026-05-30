@@ -135,3 +135,40 @@ Responsabile di build, lint, typecheck, responsive mobile, accessibilita' essenz
 - `/lib/routes.ts`
 - `/lib/data.ts`
 - `/lib/types.ts`
+
+## 14. Stato dopo Agent 0B - Integrazione UI/Data/Infographic
+
+### Cosa e' stato integrato
+
+- Le modifiche di Agent 1, Agent 2 e Agent 3 risultano consolidate nello stesso working tree su `main`, senza branch o PR locali separati.
+- La home operativa usa `HomeContent`, `AppShell`, `Header`, `EmergencyBar` e il `BottomNav` condiviso.
+- L'infografica e' attiva su `/routes/infographic` e usa `InteractiveInfographic` con hotspot letti da `/data` tramite `/lib/data.ts`.
+- `InstructionDrawer` resta il drawer unico per le schede operative e viene riutilizzato da home e infografica.
+
+### Conflitti risolti o controllati
+
+- `data/instructions.json` mantiene tutti i 30 record operativi del Data Agent.
+- `data/hotspots.json` mantiene gli hotspot richiesti dall'Infographic Agent, inclusi i blocchi principali e gli hotspot secondari.
+- Il collegamento "Palazzetto / Inalpi Arena" punta a `diorama-ingressi` e apre una scheda con azione `openDiorama`.
+- Tutti gli hotspot referenziano instruction esistenti e rispettano la struttura richiesta da `/lib/types.ts`.
+
+### Dati consolidati
+
+- Instruction finali: 30.
+- Hotspot finali: 23.
+- Dati locali attivi: pass, contatti placeholder, hotspot infografica, map areas mock, diorama hotspot mock, nodi e rotte indoor mock.
+- Numeri reali e dati sensibili restano esclusi; usare `da definire` o placeholder finche' non sono approvati.
+
+### Componenti pronti
+
+- `HomeContent` per la home operativa.
+- `EmergencyBar` per l'accesso rapido emergenza.
+- `InteractiveInfographic` per la vista infografica navigabile.
+- `InstructionDrawer` come drawer operativo unico e riutilizzabile.
+- Route placeholder coerenti per mappa, diorama, navigazione interna, emergenza e catena di comando.
+
+### Vincoli per Agent 4 e Agent 5
+
+- Agent 4 deve usare i dati esistenti in `/data/mapAreas.json`, `/data/dioramaHotspots.json` e le instruction collegate, senza introdurre Google Maps reale, planimetrie complete o 3D pesante.
+- Agent 5 deve usare `/data/indoorNodes.json` e `/data/indoorRoutes.json` per una navigazione interna mock, senza pubblicare planimetrie reali complete.
+- Entrambi devono importare dati da `/lib/data.ts`, rispettare `/lib/types.ts`, riusare `InstructionDrawer` e non duplicare shell, bottom navigation, drawer o componenti comuni.
