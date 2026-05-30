@@ -1,0 +1,11 @@
+[
+  {
+    "id": "diorama-arena",
+    "label": "Inalpi Arena mock",
+    "targetInstructionId": "workspace-status",
+    "type": "diorama",
+    "level": "mock",
+    "x": 50,
+    "y": 50
+  }
+]

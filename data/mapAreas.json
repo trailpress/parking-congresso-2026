@@ -1,0 +1,18 @@
+[
+  {
+    "id": "p1-area",
+    "label": "P1",
+    "type": "parking",
+    "color": "red",
+    "instructionId": "workspace-status",
+    "status": "da definire"
+  },
+  {
+    "id": "bus-area",
+    "label": "Bus",
+    "type": "bus",
+    "color": "blue",
+    "instructionId": "workspace-status",
+    "status": "da definire"
+  }
+]

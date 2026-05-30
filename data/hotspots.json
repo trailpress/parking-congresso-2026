@@ -1,0 +1,26 @@
+[
+  {
+    "id": "hotspot-pass",
+    "label": "Pass e codici colore",
+    "targetInstructionId": "workspace-status",
+    "type": "section",
+    "bounds": {
+      "x": 8,
+      "y": 8,
+      "width": 40,
+      "height": 24
+    }
+  },
+  {
+    "id": "hotspot-emergency",
+    "label": "Emergenza",
+    "targetInstructionId": "emergency-placeholder",
+    "type": "contact",
+    "bounds": {
+      "x": 52,
+      "y": 8,
+      "width": 40,
+      "height": 24
+    }
+  }
+]

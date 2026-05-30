@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+
+# next
+.next/
+out/
+*.tsbuildinfo
+
+# production
+build/
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# env
+.env
+.env.*
+!.env.example
+
+# system
+.DS_Store
+
+# local sensitive source material
+docs/source-pdfs/
+docs/floorplans/
+docs/reference-images/
+*.pdf

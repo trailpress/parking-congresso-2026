@@ -1,0 +1,38 @@
+[
+  {
+    "id": "workspace-status",
+    "title": "Workspace iniziale",
+    "category": "Setup",
+    "color": "green",
+    "quickAnswer": "Base tecnica creata. Contenuti operativi da definire.",
+    "whoDoesWhat": ["Master Agent: mantiene architettura e regole condivise."],
+    "whoGoesWhere": ["Agenti: lavorano nelle cartelle assegnate."],
+    "whoContactsWhom": ["Contatti operativi: da definire."],
+    "fullInstruction": "Questo record e' un mock minimo per verificare struttura dati e compilazione.",
+    "actions": ["openSource"],
+    "source": [
+      {
+        "document": "docs/brief-master.md",
+        "note": "Contenuto operativo da completare con dati approvati."
+      }
+    ]
+  },
+  {
+    "id": "emergency-placeholder",
+    "title": "Emergenza",
+    "category": "Sicurezza",
+    "color": "red",
+    "quickAnswer": "Procedura e contatti da definire.",
+    "whoDoesWhat": ["Volontario: da definire."],
+    "whoGoesWhere": ["Posizione / mappa: da definire."],
+    "whoContactsWhom": ["Referente emergenza: da definire."],
+    "fullInstruction": "Placeholder V1. Non inserire numeri personali finche' non sono confermati come pubblicabili.",
+    "actions": ["showOnMap"],
+    "source": [
+      {
+        "document": "docs/extracted/safety-notes.md",
+        "note": "Da completare con contenuti approvati."
+      }
+    ]
+  }
+]

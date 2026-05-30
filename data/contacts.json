@@ -1,0 +1,16 @@
+[
+  {
+    "id": "emergency-primary",
+    "name": "da definire",
+    "role": "Referente emergenza",
+    "phone": "da definire",
+    "publishStatus": "da confermare"
+  },
+  {
+    "id": "emergency-secondary",
+    "name": "da definire",
+    "role": "Referente emergenza alternativo",
+    "phone": "da definire",
+    "publishStatus": "da confermare"
+  }
+]

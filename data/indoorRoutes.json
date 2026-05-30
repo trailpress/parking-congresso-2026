@@ -1,0 +1,10 @@
+[
+  {
+    "id": "route-mock-1",
+    "from": "ingresso-mock",
+    "to": "foyer-mock",
+    "nodeIds": ["ingresso-mock", "foyer-mock"],
+    "mode": "fastest",
+    "estimatedMinutes": 2
+  }
+]

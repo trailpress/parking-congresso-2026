@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ingresso-mock",
+    "label": "Ingresso mock",
+    "level": "0",
+    "x": 20,
+    "y": 70,
+    "type": "entrance",
+    "accessible": true,
+    "instructionId": "workspace-status"
+  },
+  {
+    "id": "foyer-mock",
+    "label": "Foyer mock",
+    "level": "0",
+    "x": 50,
+    "y": 50,
+    "type": "foyer",
+    "accessible": true,
+    "instructionId": "workspace-status"
+  }
+]

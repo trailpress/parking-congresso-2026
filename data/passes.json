@@ -1,0 +1,30 @@
+[
+  {
+    "id": "p1-rosso",
+    "label": "P1 Rosso",
+    "color": "red",
+    "destination": "da definire",
+    "instructionId": "workspace-status"
+  },
+  {
+    "id": "p1-viola",
+    "label": "P1 Viola",
+    "color": "purple",
+    "destination": "da definire",
+    "instructionId": "workspace-status"
+  },
+  {
+    "id": "p2-combi",
+    "label": "P2 Combi",
+    "color": "orange",
+    "destination": "da definire",
+    "instructionId": "workspace-status"
+  },
+  {
+    "id": "p3-sosta-breve",
+    "label": "P3 Sosta breve",
+    "color": "yellow",
+    "destination": "da definire",
+    "instructionId": "workspace-status"
+  }
+]
