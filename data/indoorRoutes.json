@@ -1,50 +1,29 @@
 [
   {
-    "id": "route-fastest-public-to-parterre",
-    "from": "ingresso-pubblico",
-    "to": "parterre",
-    "nodeIds": ["ingresso-pubblico", "foyer-filadelfia", "corridoio-anello-0", "parterre"],
-    "mode": "fastest",
-    "estimatedMinutes": 3
-  },
-  {
-    "id": "route-accessible-public-to-gallerie",
-    "from": "ingresso-pubblico",
-    "to": "gallerie",
-    "nodeIds": ["ingresso-pubblico", "foyer-filadelfia", "corridoio-anello-0", "ascensori-sebastopoli", "gallerie"],
-    "mode": "accessible",
-    "estimatedMinutes": 7
-  },
-  {
-    "id": "route-avoid-stairs-public-to-balconata-sebastopoli",
-    "from": "ingresso-pubblico",
-    "to": "balconata-sebastopoli",
-    "nodeIds": ["ingresso-pubblico", "foyer-filadelfia", "corridoio-anello-0", "ascensori-sebastopoli", "balconata-sebastopoli"],
-    "mode": "avoid-stairs",
-    "estimatedMinutes": 8
-  },
-  {
-    "id": "route-staff-entry-to-desk",
-    "from": "ingresso-staff",
-    "to": "desk-da-definire",
-    "nodeIds": ["ingresso-staff", "foyer-sebastopoli", "desk-da-definire"],
-    "mode": "staff",
-    "estimatedMinutes": 2
-  },
-  {
-    "id": "route-public-entry-to-foyer-sebastopoli",
-    "from": "ingresso-pubblico",
-    "to": "foyer-sebastopoli",
-    "nodeIds": ["ingresso-pubblico", "foyer-filadelfia", "corridoio-anello-0", "foyer-sebastopoli"],
+    "id": "seed-public-filadelfia-parterre",
+    "fromNodeId": "accesso-pubblico-filadelfia",
+    "toNodeId": "parterre-centro-0",
     "mode": "public",
-    "estimatedMinutes": 5
+    "nodeIds": ["accesso-pubblico-filadelfia", "foyer-filadelfia-0", "anello-ovest-0", "anello-sud-0", "varco-parterre-0", "parterre-centro-0"],
+    "estimatedTime": 4,
+    "description": "Percorso pubblico base dal foyer Filadelfia al parterre tramite anello sud."
   },
   {
-    "id": "route-fastest-staff-to-platea",
-    "from": "ingresso-staff",
-    "to": "platea",
-    "nodeIds": ["ingresso-staff", "foyer-sebastopoli", "corridoio-anello-0", "platea"],
-    "mode": "fastest",
-    "estimatedMinutes": 4
+    "id": "seed-accessible-filadelfia-balconata-sebastopoli",
+    "fromNodeId": "accesso-pubblico-filadelfia",
+    "toNodeId": "balconata-sebastopoli-1",
+    "mode": "accessible",
+    "nodeIds": ["accesso-pubblico-filadelfia", "foyer-filadelfia-0", "anello-ovest-0", "anello-nord-0", "anello-est-0", "ascensori-sebastopoli-0", "ascensori-sebastopoli-1", "anello-est-1", "balconata-sebastopoli-1"],
+    "estimatedTime": 9,
+    "description": "Rotta seed accessibile che privilegia ascensori lato Sebastopoli."
+  },
+  {
+    "id": "seed-staff-est-parterre",
+    "fromNodeId": "accesso-staff-est",
+    "toNodeId": "parterre-centro-0",
+    "mode": "staff",
+    "nodeIds": ["accesso-staff-est", "corridoio-staff-est-0", "parterre-centro-0"],
+    "estimatedTime": 2,
+    "description": "Rotta staff seed attraverso passaggio tecnico controllato."
   }
 ]

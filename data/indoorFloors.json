@@ -1,0 +1,28 @@
+[
+  {
+    "id": "floor-0",
+    "name": "Livello accessi e parterre",
+    "level": 0,
+    "label": "L0",
+    "sourceReference": {
+      "document": "Derivazione controllata da note indoor interne",
+      "page": "schema semplificato",
+      "note": "Geometria non originale: sagome operative ridotte per prototipo indoor mapping."
+    },
+    "viewBox": "0 0 1000 700",
+    "sortOrder": 10
+  },
+  {
+    "id": "floor-1",
+    "name": "Livello balconate e hospitality",
+    "level": 1,
+    "label": "L+1",
+    "sourceReference": {
+      "document": "Derivazione controllata da note indoor interne",
+      "page": "schema semplificato",
+      "note": "Geometria non originale: balconate, suites e collegamenti verticali resi come aree aggregate."
+    },
+    "viewBox": "0 0 1000 700",
+    "sortOrder": 20
+  }
+]

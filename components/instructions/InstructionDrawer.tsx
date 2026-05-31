@@ -57,6 +57,14 @@ export function InstructionDrawer({ instruction, onClose, open = false }: Instru
             </Button>
           </InstructionSection>
         ) : null}
+        {instruction.actions?.includes('routeTo') ? (
+          <InstructionSection title="Percorso">
+            <Button className="w-full" href="/routes/indoor-route" variant="secondary">
+              <Icon className="h-4 w-4" name="route" />
+              Portami qui
+            </Button>
+          </InstructionSection>
+        ) : null}
         <InstructionSection title="Fonte">
           <div className="flex flex-wrap gap-2">
             {instruction.source?.map((source) => (

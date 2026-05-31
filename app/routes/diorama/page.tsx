@@ -1,5 +1,14 @@
-import { PlaceholderPage } from '../placeholder-page';
+import { DioramaView } from '@/components/diorama/DioramaView';
+import { AppShell } from '@/components/shell/AppShell';
 
 export default function DioramaPage() {
-  return <PlaceholderPage title="Diorama" />;
+  return (
+    <AppShell
+      location="Inalpi Arena"
+      subtitle="Modello interno navigabile"
+      title="Diorama arena"
+    >
+      <DioramaView />
+    </AppShell>
+  );
 }

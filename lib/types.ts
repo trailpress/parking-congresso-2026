@@ -88,22 +88,102 @@ export type DioramaHotspot = {
 
 export type IndoorNode = {
   id: string;
-  label: string;
-  level: string;
+  floorId: string;
+  name: string;
+  type:
+    | 'entrance'
+    | 'foyer'
+    | 'sector'
+    | 'stairs'
+    | 'elevator'
+    | 'service'
+    | 'desk'
+    | 'corridor'
+    | 'suite'
+    | 'balcony'
+    | 'staff'
+    | 'vertical';
   x: number;
   y: number;
-  type: 'entrance' | 'foyer' | 'sector' | 'stairs' | 'elevator' | 'service' | 'desk' | 'corridor';
-  accessible?: boolean;
+  areaId?: string;
+  isSelectableAsStart: boolean;
+  isSelectableAsDestination: boolean;
+};
+
+export type IndoorAccessLevel = 'public' | 'staff' | 'restricted' | 'hospitality';
+
+export type IndoorFloor = {
+  id: string;
+  name: string;
+  level: number;
+  label: string;
+  sourceReference: SourceReference;
+  viewBox: string;
+  sortOrder: number;
+};
+
+export type IndoorArea = {
+  id: string;
+  floorId: string;
+  name: string;
+  type:
+    | 'outer-shell'
+    | 'bowl'
+    | 'parterre'
+    | 'tribune'
+    | 'foyer'
+    | 'balcony'
+    | 'corridor'
+    | 'public-access'
+    | 'staff-access'
+    | 'suite'
+    | 'vertical-link'
+    | 'service';
+  accessLevel: IndoorAccessLevel;
+  svgPath: string;
+  labelPosition: {
+    x: number;
+    y: number;
+  };
+  colorToken: string;
+  description: string;
+  connectedNodeIds: string[];
   instructionId?: string;
+  dioramaLayerId?: string;
+};
+
+export type IndoorEdge = {
+  id: string;
+  fromNodeId: string;
+  toNodeId: string;
+  distance: number;
+  mode: 'walk' | 'stairs' | 'elevator' | 'service' | 'threshold';
+  accessLevel: IndoorAccessLevel;
+  isAccessible: boolean;
+  isStaffOnly: boolean;
+  via?: string;
 };
 
 export type IndoorRoute = {
   id: string;
-  from: string;
-  to: string;
+  fromNodeId: string;
+  toNodeId: string;
   nodeIds: string[];
   mode: 'fastest' | 'accessible' | 'avoid-stairs' | 'staff' | 'public';
-  estimatedMinutes?: number;
+  estimatedTime: number;
+  description: string;
+};
+
+export type DioramaLayer = {
+  id: string;
+  name: string;
+  floorId: string;
+  areaIds: string[];
+  defaultTransform: string;
+  explodedTransform: string;
+  isExplodable: boolean;
+  isRotatable: boolean;
+  description: string;
 };
 
 export type AppRoute = {
